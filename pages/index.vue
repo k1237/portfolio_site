@@ -19,6 +19,14 @@ html{
 .contents{
   height:450px;
 }
+
+/*文字外枠*/
+.stroke{
+   text-shadow:1px 1px 0 black, -1px -1px 0 black,
+              -1px 1px 0 black, 1px -1px 0 black,
+              0px 1px 0 white,  0-1px 0 black,
+              -1px 0 0 black, 1px 0 0 black;
+}
 </style>
 
 <script>
