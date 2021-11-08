@@ -1,14 +1,12 @@
 <template>
- <div>
-    <Header/>
-    <Nuxt/>
-    <Footer/>
- </div>
+    <div>
+      <h1>TEST</h1>
+    </div>
 </template>
 
 
 <script>
 export default {
-   
+  
 }
 </script>

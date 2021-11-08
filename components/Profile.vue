@@ -9,12 +9,12 @@
       class="m-auto mt-24 rounded-full w-9/12">
       
       <!--icon-->
-      <div class="mt-8">
+      <div class="mt-4">
       <a href="https://twitter.com/kprm1237">
-        <i class="fab fa-twitter-square fa-4x
+        <i class="fab fa-twitter-square fa-3x
                   text-blue-600"></i></a>
       <a href="https://github.com/k1237">          
-        <i class="fab fa-github-square fa-4x
+        <i class="fab fa-github-square fa-3x
                    ml-4 text-black"></i></a>
       </div>
       </div>
@@ -53,6 +53,6 @@
 
 <script>
 export default {
- 
+
 }
 </script>

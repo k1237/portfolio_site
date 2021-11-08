@@ -1,5 +1,8 @@
 <template>
-    <Profile/>
+    <div>
+      <Profile/>
+      <Portfolio/>
+    </div>
 </template>
 
 <style>
@@ -31,6 +34,6 @@ html{
 
 <script>
 export default {
-
+  
 }
 </script>
