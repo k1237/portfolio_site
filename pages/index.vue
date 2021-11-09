@@ -2,19 +2,17 @@
     <div>
       <Profile/>
       <Portfolio/>
+      <Blog/>
+      <Contact/>
     </div>
 </template>
 
 <style>
 
-html{
- height:3800px;
-}
-
 .wrapper{
     width:80%;
 }
-
+/*各ページ900pxで固定*/
 .height_fixed{
   height:900px;
 }

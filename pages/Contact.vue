@@ -4,7 +4,6 @@
     <br>
     <p class="text-center">※送信機能は現在制作中です<br>
        ご用件の方はtwitterDMかBlOG⇨CONTACTよりご連絡ください</p>
-       
     <form class="w-full max-w-lg mx-auto mt-12">
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">

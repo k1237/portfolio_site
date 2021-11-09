@@ -1,7 +1,7 @@
 <template>
 <div class="bg-black height_fixed pt-24 font-serif text-white">
     
-       <h1 class="text-4xl text-center stroke">PORTFOLIO</h1>
+       <h1 class="text-4xl text-center">PORTFOLIO</h1>
 
        <div class="flex justfy-evenly wrapper mx-auto mt-24 ">
            <div class="mr-2 w-2/6 "> 
