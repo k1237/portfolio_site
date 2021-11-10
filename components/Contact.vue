@@ -1,11 +1,13 @@
 <template>
-  <div class="bg-black height_fixed pt-24 font-serif text-white ">
-    <h1 class="text-4xl text-center stroke">CONTACT</h1>
-    <br>
-    <p class="text-center">※送信機能は現在制作中です<br>
-       ご用件の方はtwitterDMかBlOG⇨CONTACTよりご連絡ください</p>
+  <div class="bg-black height_fixed pt-24 font-mate text-white ">
+    
+    
+    <h1 data-aos="fade-right" class="text-4xl text-center stroke">CONTACT</h1>
+    
+    <p data-aos="fade-right" class="text-center mt-4">※送信機能は現在制作中です<br>
+       ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください</p>
        
-    <form class="w-full max-w-lg mx-auto mt-12">
+    <form  data-aos="fade-right" class="w-full max-w-lg mx-auto mt-12">
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
           <label
@@ -131,7 +133,7 @@
             "
             type="button"
           >
-            Send
+            SEND
           </button>
         </div>
         <div class="md:w-2/3"></div>

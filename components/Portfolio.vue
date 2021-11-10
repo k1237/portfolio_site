@@ -1,9 +1,9 @@
 <template>
-<div class="bg-black height_fixed pt-24 font-serif text-white">
-    
-       <h1 class="text-4xl text-center stroke">PORTFOLIO</h1>
-
-       <div class="flex justfy-evenly wrapper mx-auto mt-24 ">
+<div class="bg-black height_fixed pt-24 font-mate text-white">
+       
+       <h1 data-aos="fade-right" class="text-4xl text-center stroke">PORTFOLIO</h1>
+        
+       <div data-aos="fade-right" class="flex justfy-evenly wrapper mx-auto mt-24 ">
            <div class="mr-2 w-2/6 "> 
                <a href="https://k1237.github.io/IdeaList/">
                    <img src="~@/assets/img/ideaList.png" alt="">
@@ -32,15 +32,24 @@
                 <p class="break-all">現在制作中...</p>
            </div>
        </div>
+   
+  
 </div>
 </template>
+
+
+<script>
+
+export default {
+    data() {
+      return {
+        visible: false,
+      };
+    },
+
+}
+</script>
 
 <style scoped>
 
 </style>
-
-<script>
-export default {
- 
-}
-</script>

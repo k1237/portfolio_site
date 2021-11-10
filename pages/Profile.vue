@@ -1,12 +1,12 @@
 <template>
-<div class="bg-gray-600 height_fixed pt-24 font-serif ">
+<div class="bg-gray-600 height_fixed pt-24 font-mate">
+    <transition appear>
     <div class="wrapper  m-auto h-5/6 flex justfy-evenly">
-      
-      
+    
       <div class="text-white flex-1 text-center">
       <!--img-->
       <img src="~@/assets/img/profile.jpg" alt=""
-      class="m-auto mt-24 rounded-full w-9/12">
+      class="m-auto mt-12 rounded-full w-9/12">
       
       <!--icon-->
       <div class="mt-4">
@@ -17,10 +17,19 @@
         <i class="fab fa-github-square fa-3x
                    ml-4 text-black"></i></a>
       </div>
+      <br>
+      <p>保有資格</p>
+      <hr class="w-7/12 mx-auto">
+      <p>ExcelVBAエキスパート ベーシック/スタンダード</p>
+      <p>ITパスポート</p>
+      <p>Webクリエイター認定試験</p>
+      <p>JAVASEBronze</p>
+
+
       </div>
 
 
-      <div class="text-white flex-1 mt-12 stroke">
+      <div class="text-white flex-1 mt-20 stroke">
       <h1 class="text-5xl ml-8">PROFILE</h1>
         
       <div class="text-2xl mt-8 ml-8">
@@ -46,6 +55,7 @@
       </div>
 
     </div>
+    </transition>
 </div>
 </template>
 

@@ -1,9 +1,11 @@
 <template>
-<div class="bg-gray-600 height_fixed pt-24 font-serif ">
-    <div class="wrapper  m-auto h-5/6 flex justfy-evenly">
-      
-      
-      <div class="text-white flex-1 text-center">
+
+<div class="bg-gray-600 height_fixed pt-24 font-mate">
+
+  <transition appear>
+    <div  class="wrapper  m-auto h-5/6 flex justfy-evenly">
+  
+      <div class="text-white flex-1 text-center w-6/12">
       <!--img-->
       <img src="~@/assets/img/profile.jpg" alt=""
       class="m-auto mt-12 rounded-full w-9/12">
@@ -20,19 +22,15 @@
       <br>
       <p>保有資格</p>
       <hr class="w-7/12 mx-auto">
-      <br>
       <p>ExcelVBAエキスパート ベーシック/スタンダード</p>
       <p>ITパスポート</p>
       <p>Webクリエイター認定試験</p>
       <p>JAVASEBronze</p>
-
-
       </div>
 
 
-      <div class="text-white flex-1 mt-20 stroke">
+      <div class="text-white flex-1 mt-20 stroke w-6/12">
       <h1 class="text-5xl ml-8">PROFILE</h1>
-        
       <div class="text-2xl mt-8 ml-8">
         <p>Name:K</p>
         <p>Age:29(1991/12/03)</p>
@@ -56,13 +54,21 @@
       </div>
 
     </div>
-</div>
-</template>
+    </transition>
 
+</div>
+
+</template>
 
 
 <script>
 export default {
-
+  data() {
+    return {
+   
+    };
+  },
 }
 </script>
+
+

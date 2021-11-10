@@ -16,8 +16,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'}
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'},
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com" crossorigin'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Mate+SC&display=swap'},
+
     ]
   },
 
@@ -27,6 +30,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/aos',ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

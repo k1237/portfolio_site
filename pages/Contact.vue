@@ -1,9 +1,15 @@
 <template>
-  <div class="bg-black height_fixed pt-24 font-serif text-white ">
+  <div class="bg-black height_fixed pt-24 font-mate text-white ">
+    <transition appear>
     <h1 class="text-4xl text-center stroke">CONTACT</h1>
-    <br>
-    <p class="text-center">※送信機能は現在制作中です<br>
-       ご用件の方はtwitterDMかBlOG⇨CONTACTよりご連絡ください</p>
+    </transition>
+
+    <transition appear>
+    <p class="text-center mt-4">※送信機能は現在制作中です<br>
+       ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください</p>
+    </transition>
+
+    <transition appear>
     <form class="w-full max-w-lg mx-auto mt-12">
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
@@ -130,12 +136,14 @@
             "
             type="button"
           >
-            Send
+            SEND
           </button>
         </div>
         <div class="md:w-2/3"></div>
       </div>
     </form>
+    </transition>
+
   </div>
 </template>
 
