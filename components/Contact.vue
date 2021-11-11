@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black height_fixed pt-24 font-mate text-white ">
+  <div class="bg-black height_fixed pt-24 font-mate text-white pb-16">
     
     
     <h1 data-aos="fade-right" class="text-4xl text-center stroke">CONTACT</h1>
@@ -9,7 +9,7 @@
        
     <form  data-aos="fade-right" class="w-full max-w-lg mx-auto mt-12">
       <div class="flex flex-wrap -mx-3 mb-6">
-        <div class="w-full px-3">
+        <div class="w-8/12 sm:w-full px-3 mx-auto">
           <label
             class="
             stroke
@@ -43,8 +43,9 @@
           <p class="text-red-600 text-xs italic">※必須</p>
         </div>
       </div>
+
       <div class="flex flex-wrap -mx-3 mb-6">
-        <div class="w-full px-3">
+        <div class="w-8/12 sm:w-full px-3 mx-auto">
           <label
             class="
               block
@@ -79,8 +80,9 @@
           </p>
         </div>
       </div>
+
       <div class="flex flex-wrap -mx-3 mb-6">
-        <div class="w-full px-3">
+        <div class="w-8/12 sm:w-full px-3 mx-auto">
           <label
             class="
               block
@@ -117,8 +119,9 @@
           </p>
         </div>
       </div>
-      <div class="md:flex md:items-center">
-        <div class="md:w-1/3">
+      
+      <div class="flex items-center">
+        <div class="w-1/3 mx-auto text-center sm:text-left">
           <button
             class="
               shadow

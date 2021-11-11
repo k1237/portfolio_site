@@ -1,11 +1,11 @@
 <template>
 
 <div class="bg-gray-600 height_fixed pt-24 font-mate">
-
+    <h1 class="text-4xl text-center stroke text-white">PROFILE</h1>
   <transition appear>
-    <div  class="wrapper  m-auto h-5/6 flex justfy-evenly">
+    <div  class="wrapper  m-auto h-5/6 sm:flex justfy-evenly">
   
-      <div class="text-white flex-1 text-center w-6/12">
+      <div class="text-white sm:flex-1 text-center sm:w-6/12">
       <!--img-->
       <img src="~@/assets/img/profile.jpg" alt=""
       class="m-auto mt-12 rounded-full w-9/12">
@@ -29,26 +29,26 @@
       </div>
 
 
-      <div class="text-white flex-1 mt-20 stroke w-6/12">
-      <h1 class="text-5xl ml-8">PROFILE</h1>
-      <div class="text-2xl mt-8 ml-8">
+      <div class="text-white sm:flex-1 mt-20 stroke sm:w-6/12">
+
+      <div class="text-xl sm:text-2xl mt-8 ml-8">
         <p>Name:K</p>
         <p>Age:29(1991/12/03)</p>
         <br>
-        <p class="text-xl ml-4">事務の仕事をしている時に、<br>
+        <p class="text-base sm:text-xl sm:ml-4">事務の仕事をしている時に、<br>
         Excelの業務効率化をすることになり<br>
         ExcelVBAを学んだことをきっかけに<br>
         プログラミングに興味を持つ。<br>
         現在はWeb制作・開発関連を学ぶ職業訓練生<br>
         (2022/03まで)</p>
         <br>
-        <p class="text-2xl">使用言語・開発環境</p>
-         <p class="mt-2 ml-4 text-xl">
+        <p class="mt-4 sm:mt-0 text-xl sm:text-2xl">使用言語・開発環境</p>
+         <p class="mt-2 text-base sm:text-xl sm:ml-4">
            HTML/CSS/Jquary/WordPress <br>
            Javascript <br>
            Vue.js/Nuxt.js<br>
            Laravel<br>
-           Vscode/Github<br>
+           Vscode/Github<br><br>
          </p>
       </div>
       </div>

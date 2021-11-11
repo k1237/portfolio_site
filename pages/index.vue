@@ -17,6 +17,8 @@
   height:900px;
 }
 
+
+
 .contents{
   height:450px;
 }
@@ -57,19 +59,11 @@
   }
 }
 
-/*スクロールアニメーション*/
-.fadeIn {
-  animation: fadeIn 2s;
+/*レスポンシブ*/
+ @media screen and (max-width:640px) {
+.height_fixed{
+  height:auto;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }
 
 </style>

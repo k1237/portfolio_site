@@ -1,15 +1,17 @@
 <template>
   <div class="bg-black font-mate w-full
-  border-b border-white">
-    <div class="wrapper m-auto flex justify-between ">
+               border-b border-white h-14 sm:h-20">
+
+    <div class="wrapper m-auto sm:flex sm:justify-between">
       <Nuxt-link to="/">
         <button>
-          <h1 class="text-white text-4xl mt-4 mb-4
+          <h1 class="text-white 
+                     text-xl sm:text-4xl mt-4 mb-4
                      hover:text-gray-400">K'sPortfolio</h1>
         </button>
       </Nuxt-link>
 
-      <ul class="text-white flex mt-4">
+      <ul class="text-white flex mt-4 invisible sm:visible">
         <Nuxt-link to="/Profile">
           <li class="hover:text-gray-400"><button>PROFILE</button></li>
         </Nuxt-link>

@@ -3,14 +3,14 @@
 
     <h1 data-aos="fade-left" class="text-4xl text-center stroke">BLOG</h1>
 
-    <div data-aos="fade-left" class="wrapper m-auto h-5/6 justfy-evenly mt-12">
+    <div data-aos="fade-left" class="wrapper m-auto h-5/6 justfy-evenly mt-12 pb-16 sm:pb-0">
       <div class="w-9/12 mx-auto">
         <a href="https://k-programing.com/">
           <img src="~@/assets/img/blog.png" alt="" />
         </a>
       </div>
 
-      <div class="w-6/12 mx-auto mt-8">
+      <div class="w-9/12 sm:w-6/12 mx-auto mt-8 ">
        <h1 class="text-lg font-bold">技術ブログ</h1>
         <hr />
         <p class="break-all">
