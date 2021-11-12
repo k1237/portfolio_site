@@ -17,8 +17,6 @@
   height:900px;
 }
 
-
-
 .contents{
   height:450px;
 }

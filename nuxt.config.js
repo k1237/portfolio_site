@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -21,9 +23,7 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com" crossorigin'},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Mate+SC&display=swap'},
     ],
-    script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' },
-    ]
+    
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -53,6 +53,6 @@ export default {
   
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  
+
   }
 }

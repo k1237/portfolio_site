@@ -3,13 +3,41 @@
 <div class="bg-gray-600 height_fixed pt-4 sm:pt-24 font-mate">
     
    <!--ハンバーガーボタン--> 
-      <div class="burger-btn rounded sm:hidden"
+      <div id="burger" class="burger-btn rounded sm:hidden"
            @click="toggleAction">
         <div class="bar top"></div>
         <div class="bar mid"></div>
         <div class="bar bottom"></div>
       </div>
 
+    <!--ハンバーガーメニュー-->
+     <div id="burger-menu" 
+          class="bg-black w-6/12 m-right sm:hidden hide fixed h-screen"
+         >
+       <ul class="text-white text-left">
+        <Nuxt-link to="/Profile">
+          <li class=" hover:text-gray-400"><button>PROFILE</button></li>
+        </Nuxt-link>
+
+        <Nuxt-link to="/Portfolio">
+          <li class=" hover:text-gray-400"><button>PORTFOLIO</button></li>
+        </Nuxt-link>
+
+        <Nuxt-link to="/Blog">
+          <li class=" hover:text-gray-400"><button>BLOG</button></li>
+        </Nuxt-link>
+
+        <Nuxt-link to="/Contact">
+          <li class=" hover:text-gray-400"><button>CONTACT</button></li>
+        </Nuxt-link>
+
+        <Nuxt-link to="/Privacy">
+          <li class=" hover:text-gray-400">
+            <button>PRIVACYPOLICY</button>
+          </li>
+        </Nuxt-link>
+       </ul>
+    </div>
 
     <h1 class="text-4xl text-center stroke text-white">PROFILE</h1>
   <transition appear>
@@ -82,17 +110,17 @@
 .bar{
     width: 35px;
     height: 5px;
-    background-color:white;
     position:absolute;
+    background-color:white;
     margin-left:15%;
 }
 
 .top{
-    top:30%;
+    top:20%;
 }
 
 .mid{
-    top:50%;
+    top:45%;
 }
 
 .bottom{
@@ -112,13 +140,25 @@
 }
 
 .burger-btn.close .bottom {
-    transform: translate(0, -10px) rotate(-45deg);
+    transform: translate(0, -9.5px) rotate(-45deg);
     transition: transform .2s;
 }
 
-/*レスポンシブ*/
-@media screen and (max-width:640px) {
-   
+/*ハンバーガーメニュー*/
+.m-right{
+  margin-left:50%;
+}
+
+#burger-menu{
+  /* margin-top:-10%; */
+}
+
+.open{
+  display:block;
+}
+
+.hide{
+  display:none;
 }
 
 </style>
@@ -127,12 +167,22 @@
 export default {
   data() {
     return {
-   
+      // show:false
     };
   },
   methods:{
      toggleAction(){
-        $('.burger-btn').toggleClass('close');
+        // this.show = !this.show;
+        const burger = document.getElementById("burger");
+              burger.classList.toggle("close");
+        const menu =  document.getElementById("burger-menu");
+        if( menu.classList.contains('hide')){
+              menu.classList.remove("hide");
+              menu.classList.add("open");
+        }else if(menu.classList.contains('open')){
+              menu.classList.remove("open");
+              menu.classList.add("hide");
+        }
      }
   }
 }
