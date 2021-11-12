@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 Vue.use(
   AOS.init({
     once: true,
-    disable: 'phone',
     duration: 750,
     easing: 'ease-out-quart',
   })

@@ -1,6 +1,16 @@
 <template>
 
-<div class="bg-gray-600 height_fixed pt-24 font-mate">
+<div class="bg-gray-600 height_fixed pt-4 sm:pt-24 font-mate">
+    
+   <!--ハンバーガーボタン--> 
+      <div class="burger-btn rounded sm:hidden"
+           @click="toggleAction">
+        <div class="bar top"></div>
+        <div class="bar mid"></div>
+        <div class="bar bottom"></div>
+      </div>
+
+
     <h1 class="text-4xl text-center stroke text-white">PROFILE</h1>
   <transition appear>
     <div  class="wrapper  m-auto h-5/6 sm:flex justfy-evenly">
@@ -57,9 +67,61 @@
     </transition>
 
 </div>
-
 </template>
 
+<style scoped>
+/*ハンバーガーメニュー*/
+.burger-btn{
+    width: 50px;
+    height: 40px;
+    position:relative;
+    margin-left:85%;
+    background-color:gray;
+}
+
+.bar{
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    position:absolute;
+    margin-left:15%;
+}
+
+.top{
+    top:30%;
+}
+
+.mid{
+    top:50%;
+}
+
+.bottom{
+    top:70%;
+}
+
+/*3本線を☓印にする*/
+
+.burger-btn.close .top {
+    transform:translate(0, 10px) rotate(45deg);
+    transition:transform .2s;
+}
+
+.burger-btn.close .mid {
+    opacity:0;
+    transition:opacity .2s;
+}
+
+.burger-btn.close .bottom {
+    transform: translate(0, -10px) rotate(-45deg);
+    transition: transform .2s;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width:640px) {
+   
+}
+
+</style>
 
 <script>
 export default {
@@ -68,6 +130,11 @@ export default {
    
     };
   },
+  methods:{
+     toggleAction(){
+        $('.burger-btn').toggleClass('close');
+     }
+  }
 }
 </script>
 

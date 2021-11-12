@@ -60,7 +60,7 @@
 }
 
 /*レスポンシブ*/
- @media screen and (max-width:640px) {
+@media screen and (max-width:640px) {
 .height_fixed{
   height:auto;
 }

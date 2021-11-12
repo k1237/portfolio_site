@@ -20,7 +20,9 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
       { rel: 'preconnect', href: 'https://fonts.gstatic.com" crossorigin'},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Mate+SC&display=swap'},
-
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' },
     ]
   },
 
@@ -47,8 +49,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
-
+  
+  
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  
   }
 }
