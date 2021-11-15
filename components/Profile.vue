@@ -1,44 +1,8 @@
 <template>
 
-<div class="bg-gray-600 height_fixed pt-4 sm:pt-24 font-mate">
+<div class="bg-gray-600 height_fixed pt-4 sm:pt-24 font-mate ">
     
-   <!--ハンバーガーボタン--> 
-      <div id="burger" class="burger-btn rounded sm:hidden"
-           @click="toggleAction">
-        <div class="bar top"></div>
-        <div class="bar mid"></div>
-        <div class="bar bottom"></div>
-      </div>
-
-    <!--ハンバーガーメニュー-->
-     <div id="burger-menu" 
-          class="bg-black w-6/12 m-right sm:hidden hide fixed h-screen"
-         >
-       <ul class="text-white text-left">
-        <Nuxt-link to="/Profile">
-          <li class=" hover:text-gray-400"><button>PROFILE</button></li>
-        </Nuxt-link>
-
-        <Nuxt-link to="/Portfolio">
-          <li class=" hover:text-gray-400"><button>PORTFOLIO</button></li>
-        </Nuxt-link>
-
-        <Nuxt-link to="/Blog">
-          <li class=" hover:text-gray-400"><button>BLOG</button></li>
-        </Nuxt-link>
-
-        <Nuxt-link to="/Contact">
-          <li class=" hover:text-gray-400"><button>CONTACT</button></li>
-        </Nuxt-link>
-
-        <Nuxt-link to="/Privacy">
-          <li class=" hover:text-gray-400">
-            <button>PRIVACYPOLICY</button>
-          </li>
-        </Nuxt-link>
-       </ul>
-    </div>
-
+  
     <h1 class="text-4xl text-center stroke text-white">PROFILE</h1>
   <transition appear>
     <div  class="wrapper  m-auto h-5/6 sm:flex justfy-evenly">
@@ -97,94 +61,15 @@
 </div>
 </template>
 
-<style scoped>
-/*ハンバーガーメニュー*/
-.burger-btn{
-    width: 50px;
-    height: 40px;
-    position:relative;
-    margin-left:85%;
-    background-color:gray;
-}
 
-.bar{
-    width: 35px;
-    height: 5px;
-    position:absolute;
-    background-color:white;
-    margin-left:15%;
-}
-
-.top{
-    top:20%;
-}
-
-.mid{
-    top:45%;
-}
-
-.bottom{
-    top:70%;
-}
-
-/*3本線を☓印にする*/
-
-.burger-btn.close .top {
-    transform:translate(0, 10px) rotate(45deg);
-    transition:transform .2s;
-}
-
-.burger-btn.close .mid {
-    opacity:0;
-    transition:opacity .2s;
-}
-
-.burger-btn.close .bottom {
-    transform: translate(0, -9.5px) rotate(-45deg);
-    transition: transform .2s;
-}
-
-/*ハンバーガーメニュー*/
-.m-right{
-  margin-left:50%;
-}
-
-#burger-menu{
-  /* margin-top:-10%; */
-}
-
-.open{
-  display:block;
-}
-
-.hide{
-  display:none;
-}
-
-</style>
 
 <script>
 export default {
   data() {
     return {
-      // show:false
+    
     };
   },
-  methods:{
-     toggleAction(){
-        // this.show = !this.show;
-        const burger = document.getElementById("burger");
-              burger.classList.toggle("close");
-        const menu =  document.getElementById("burger-menu");
-        if( menu.classList.contains('hide')){
-              menu.classList.remove("hide");
-              menu.classList.add("open");
-        }else if(menu.classList.contains('open')){
-              menu.classList.remove("open");
-              menu.classList.add("hide");
-        }
-     }
-  }
 }
 </script>
 

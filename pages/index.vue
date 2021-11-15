@@ -1,11 +1,19 @@
 <template>
-    <div>
+    <div class="modal"> 
       <Profile/>
       <Portfolio/>
       <Blog/>
       <Contact/>
     </div>
 </template>
+
+
+<script>
+
+export default {
+
+}
+</script>
 
 <style>
 
@@ -66,8 +74,3 @@
 
 </style>
 
-<script>
-export default {
-  
-}
-</script>
