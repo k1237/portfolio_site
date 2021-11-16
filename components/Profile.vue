@@ -9,7 +9,7 @@
   
       <div class="text-white sm:flex-1 text-center sm:w-6/12">
       <!--img-->
-      <img src="~assets/img/profile.jpg" alt=""
+      <img src="../assets/img/profile.jpg" alt=""
       class="m-auto mt-12 rounded-full w-9/12">
       
       <!--icon-->
