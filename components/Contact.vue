@@ -8,7 +8,7 @@
        ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください</p>
        
     <form  data-aos="fade-right" class="w-full max-w-lg mx-auto mt-12">
-      <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="flex flex-wrap  mb-6">
         <div class="w-8/12 sm:w-full px-3 mx-auto">
           <label
             class="
@@ -44,7 +44,7 @@
         </div>
       </div>
 
-      <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="flex flex-wrap mb-6">
         <div class="w-8/12 sm:w-full px-3 mx-auto">
           <label
             class="
@@ -81,7 +81,7 @@
         </div>
       </div>
 
-      <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="flex flex-wrap mb-6">
         <div class="w-8/12 sm:w-full px-3 mx-auto">
           <label
             class="
