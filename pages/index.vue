@@ -1,5 +1,5 @@
 <template>
-    <div class="modal"> 
+    <div> 
       <Profile/>
       <Portfolio/>
       <Blog/>

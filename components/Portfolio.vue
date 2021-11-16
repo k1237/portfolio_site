@@ -7,7 +7,7 @@
             class="sm:flex sm:justfy-evenly wrapper mx-auto mt-24 ">
            <div class="sm:mr-2 sm:w-2/6 "> 
                <a href="https://k1237.github.io/IdeaList/">
-                   <img src="~@/assets/img/ideaList.png" alt="">
+                   <img src="~assets/img/ideaList.png" alt="">
                 </a>
                <br>
                <h1 class="text-lg font-bold">IdeaList</h1>
