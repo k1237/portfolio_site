@@ -18,12 +18,13 @@ export default {
 <style>
 
 html{
-overflow-x : hidden;
+  max-width:100%;
 }
 
 .wrapper{
     width:80%;
 }
+
 /*各ページ900pxで固定*/
 .height_fixed{
   height:900px;
