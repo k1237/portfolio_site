@@ -42,7 +42,7 @@
   </div>
     
    <!--スマホナビ-->
-   <div class="w-9/12 mx-auto flex justify-between sm:hidden">
+   <div class="w-9/12 mx-auto flex justify-between sm:hidden ">
       <!--タイトル-->
       <Nuxt-link to="/">
         <button>
@@ -67,7 +67,7 @@
    <!--ハンバーガーメニュー-->
   <transition name="slide-fade">
      <div v-if="show" id="burger-menu" 
-          class="bg-black w-6/12 sm:hidden fixed h-screen">
+          class="bg-black w-6/12 sm:hidden fixed h-screen z-10">
        <ul class="text-white text-left text-2xl">
         <Nuxt-link to="/Profile">
           <li class=" hover:text-gray-400">
