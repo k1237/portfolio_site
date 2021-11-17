@@ -67,7 +67,7 @@
    <!--ハンバーガーメニュー-->
   <transition name="slide-fade">
      <div v-if="show" id="burger-menu" 
-          class="bg-black w-6/12 sm:hidden fixed h-screen z-10">
+          class="bg-black w-6/12 sm:hidden fixed h-screen">
        <ul class="text-white text-left text-2xl">
         <Nuxt-link to="/Profile">
           <li class=" hover:text-gray-400">
@@ -213,7 +213,7 @@ export default {
 }
 
 #burger-menu{
-  height:100%;
+  height:100 !important;
   /* margin-top:-10%; */
 }
 
