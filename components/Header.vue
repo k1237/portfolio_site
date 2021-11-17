@@ -66,8 +66,10 @@
 
    <!--ハンバーガーメニュー-->
   <transition name="slide-fade">
-     <div v-if="show" id="burger-menu" 
-          class="bg-black w-6/12 sm:hidden fixed h-screen">
+     <div v-if="show" 
+          id="burger-menu" 
+          class="bg-black w-full sm:hidden fixed h-full">
+
        <ul class="text-white text-left text-2xl">
         <Nuxt-link to="/Profile">
           <li class=" hover:text-gray-400">

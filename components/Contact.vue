@@ -1,15 +1,24 @@
 <template>
-  <div class="bg-black height_fixed pt-24 font-mate text-white pb-16">
+  <div class="bg-black 
+              height_fixed 
+              pt-24 
+              font-mate 
+              text-white 
+              pb-16">
     
     
-    <h1 data-aos="fade-right" class="text-4xl text-center stroke">CONTACT</h1>
+    <h1 data-aos="fade-right" 
+        class="text-4xl text-center stroke">CONTACT</h1>
     
-    <p data-aos="fade-right" class="text-center mt-4">※送信機能は現在制作中です<br>
+    <p data-aos="fade-right" 
+       class="text-center mt-4">※送信機能は現在制作中です<br>
        ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください</p>
        
-    <form  data-aos="fade-right" class="w-full max-w-lg mx-auto mt-12">
+    <form  data-aos="fade-right" 
+           class="w-9/12 mx-auto mt-12">
+
       <div class="flex flex-wrap  mb-6">
-        <div class="w-8/12 sm:w-full px-3 mx-auto">
+        <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
             class="
             stroke
@@ -25,6 +34,7 @@
             NAME
           </label>
           <input
+            id="nick"
             class="
               text-black
               appearance-none
@@ -36,8 +46,7 @@
               px-4
               mb-3
               leading-tight
-            "
-            id="nick"
+            "  
             type="text"
           />
           <p class="text-red-600 text-xs italic">※必須</p>
@@ -45,7 +54,7 @@
       </div>
 
       <div class="flex flex-wrap mb-6">
-        <div class="w-8/12 sm:w-full px-3 mx-auto">
+        <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
             class="
               block
@@ -60,6 +69,7 @@
             E-mail
           </label>
           <input
+            id="email"
             class="
               text-black
               appearance-none
@@ -72,7 +82,6 @@
               mb-3
               leading-tight
             "
-            id="email"
             type="email"
           />
           <p class="text-red-600 text-xs italic">
@@ -82,7 +91,7 @@
       </div>
 
       <div class="flex flex-wrap mb-6">
-        <div class="w-8/12 sm:w-full px-3 mx-auto">
+        <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
             class="
               block
@@ -97,6 +106,7 @@
             Message
           </label>
           <textarea
+           id="message"
             class="
               text-black
               no-resize
@@ -112,7 +122,6 @@
               h-48
               resize-none
             "
-            id="message"
           ></textarea>
           <p class="text-red-600 text-xs italic">
           ※必須
@@ -120,8 +129,7 @@
         </div>
       </div>
       
-      <div class="flex items-center">
-        <div class="w-1/3 mx-auto text-center sm:text-left">
+      <div class="items-center mx-auto w-9/12 text-center">
           <button
             class="
               shadow
@@ -138,9 +146,8 @@
           >
             SEND
           </button>
-        </div>
-        <div class="md:w-2/3"></div>
       </div>
+
     </form>
   </div>
 </template>
