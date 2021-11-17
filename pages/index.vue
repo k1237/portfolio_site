@@ -17,10 +17,6 @@ export default {
 
 <style>
 
-html{
-  max-width:100%;
-}
-
 .wrapper{
     width:80%;
 }
@@ -30,9 +26,9 @@ html{
   height:900px;
 }
 
-.contents{
+/* .contents{
   height:450px;
-}
+} */
 
 /*GoogleFonts*/
 .font-mate{

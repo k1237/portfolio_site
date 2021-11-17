@@ -3,7 +3,7 @@
 <div class="bg-gray-600 height_fixed pt-4 sm:pt-24 font-mate ">
     <h1 class="pt-16 text-4xl text-center stroke text-white">PROFILE</h1>
   <transition appear>
-    <div  class="wrapper  m-auto h-5/6 sm:flex justfy-evenly">
+    <div  class="wrapper m-auto h-5/6 sm:flex justfy-evenly">
   
       <div class="text-white sm:flex-1 text-center sm:w-6/12">
       <!--img-->
