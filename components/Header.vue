@@ -77,57 +77,7 @@
       </div>
     </div>
 
-     <!--ハンバーガーメニュー-->
-    <transition name="slide-fade">
-      <div
-        v-if="show"
-        id="burger-menu"
-        class="bg-black w-6/12 sm:hidden fixed h-full z-10"
-      >
-        <ul class="text-white text-left text-2xl">
-          <Nuxt-link to="/Profile">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">PROFILE</li>
-            </button>
-
-            <hr />
-          </Nuxt-link>
-
-          <Nuxt-link to="/Portfolio">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">PORTFOLIO</li>
-            </button>
-
-            <hr />
-          </Nuxt-link>
-
-          <Nuxt-link to="/Blog">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">BLOG</li>
-            </button>
-
-            <hr />
-          </Nuxt-link>
-
-          <Nuxt-link to="/Contact">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">CONTACT</li>
-            </button>
-
-            <hr />
-          </Nuxt-link>
-
-          <Nuxt-link to="/Privacy">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">PRIVACYPOLICY</li>
-            </button>
-
-            <hr />
-          </Nuxt-link>
-        </ul>
-      </div>
-    </transition>
-
+   
   </div>
   
 </template>
@@ -231,27 +181,6 @@ export default {
   transition: transform 0.2s;
 }
 
-/*ハンバーガーメニュー*/
-.m-right {
-  margin-left: 50%;
-}
 
-#burger-menu {
-  height: 100 !important;
-  /* margin-top:-10%; */
-}
-
-/*スライドアニメーション*/
-.slide-fade-enter-active {
-  transition: all 0.3s ease;
-}
-.slide-fade-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.slide-fade-enter,
-.slide-fade-leave-to {
-  transform: translateX(10px);
-  opacity: 0;
-}
 </style>
 

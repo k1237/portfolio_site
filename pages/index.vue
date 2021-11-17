@@ -1,5 +1,6 @@
 <template>
     <div> 
+      <Hbmenu/>
       <Profile/>
       <Portfolio/>
       <Blog/>
