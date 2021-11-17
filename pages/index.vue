@@ -17,6 +17,10 @@ export default {
 
 <style>
 
+html{
+overflow-x : hidden;
+}
+
 .wrapper{
     width:80%;
 }

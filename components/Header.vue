@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black font-mate w-screen border-b border-white h-14 sm:h-20 fixed z-10 overflow-x-hidden">
+  <div class="bg-black font-mate w-screen border-b border-white h-14 sm:h-20 fixed z-10 overflow-x-hidden mb-16">
 
     <!--PCナビ-->
     <div class="wrapper m-auto hidden sm:flex sm:justify-between">
