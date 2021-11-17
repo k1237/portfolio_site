@@ -89,29 +89,27 @@ import {
   clearAllBodyScrollLocks,
 } from 'body-scroll-lock'
 
+
 export default {
   data() {
     return {
-      show: false,
+      show:false,
     }
   },
-
-  mounted() {
-    const modal = document.querySelector('html')
-    clearAllBodyScrollLocks(modal)
-  },
-
   methods: {
     toggleAction() {
-      this.show = !this.show
-      const burger = document.getElementById('burger')
-      burger.classList.toggle('close')
+      this.show = !this.show;
+      this.$emit("toggle-event", this.show);
+      
+      const burger = document.getElementById('burger');
+      burger.classList.toggle('close');
+
       if (this.show === true) {
-        const html = document.querySelector('html')
-        disableBodyScroll(html)
+        const html = document.querySelector('html');
+        disableBodyScroll(html);
       } else if (this.show === false) {
-        const html = document.querySelector('html')
-        clearAllBodyScrollLocks(html)
+        const html = document.querySelector('html');
+        clearAllBodyScrollLocks(html);
       }
     },
 
