@@ -19,9 +19,10 @@ export default {
   width: 80%;
 }
 
-/*各ページ900pxで固定*/
+/*各ページ1200pxで固定
+※字が多くなる場合はautoでもいいかも*/
 .height_fixed {
-  height: 900px;
+  height:1200px;
 }
 
 /* .contents{
