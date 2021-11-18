@@ -76,10 +76,7 @@
         <div class="bar bottom"></div>
       </div>
     </div>
-
-   
   </div>
-  
 </template>
 
 <script>
@@ -89,36 +86,43 @@ import {
   clearAllBodyScrollLocks,
 } from 'body-scroll-lock'
 
-
 export default {
+
+  props:{
+    flag:Boolean,
+  },
+
   data() {
     return {
       show:false,
     }
   },
+
+  watch: {
+    flag(newValue) {
+      this.show = newValue;
+    }
+  },
+
   methods: {
     toggleAction() {
       this.show = !this.show;
-      this.$emit("toggle-event", this.show);
-      
-      const burger = document.getElementById('burger');
-      burger.classList.toggle('close');
+      this.$emit('toggle-event', this.show);
 
+      const burger = document.getElementById('burger');
+      if(burger.classList.contains('close')===false){
+         burger.classList.add('close');
+      }else if(burger.classList.contains('close')===true){
+         burger.classList.remove('close');
+      }
+
+
+      const html = document.querySelector('html');
       if (this.show === true) {
-        const html = document.querySelector('html');
         disableBodyScroll(html);
       } else if (this.show === false) {
-        const html = document.querySelector('html');
         clearAllBodyScrollLocks(html);
       }
-    },
-
-    removeAction() {
-      this.show = false
-      const burger = document.getElementById('burger')
-      burger.classList.remove('close')
-      const html = document.querySelector('html')
-      clearAllBodyScrollLocks(html)
     },
   },
 }
@@ -178,7 +182,5 @@ export default {
   transform: translate(0, -9.5px) rotate(-45deg);
   transition: transform 0.2s;
 }
-
-
 </style>
 

@@ -1,7 +1,10 @@
 <template>
   <div>
-    <Header @toggle-event="toggleAction" />
-    <Hbmenu v-if="flag"/>
+    <Header :flag="flag"
+            @toggle-event="toggleAction"/>
+    <Hbmenu :flag="flag"
+            @remove-event="removeAction"
+            />
     <Nuxt />
     <Footer />
   </div>
@@ -19,6 +22,9 @@ export default {
     toggleAction(show) {
       this.flag = show;
     },
+    removeAction(show){
+      this.flag = show;
+    }
   },
 }
 </script>

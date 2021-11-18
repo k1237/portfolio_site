@@ -1,7 +1,8 @@
 <template>
 <!--ハンバーガーメニュー-->
     <transition name="slide-fade">
-      <div
+      <div 
+        v-if="flag"
         id="burger-menu"
         class="bg-black w-6/12 sm:hidden fixed h-full z-10 mt-14"
       >
@@ -18,7 +19,6 @@
             <button @click="removeAction">
               <li class="hover:text-gray-400">PORTFOLIO</li>
             </button>
-
             <hr />
           </Nuxt-link>
 
@@ -26,7 +26,6 @@
             <button @click="removeAction">
               <li class="hover:text-gray-400">BLOG</li>
             </button>
-
             <hr />
           </Nuxt-link>
 
@@ -34,7 +33,6 @@
             <button @click="removeAction">
               <li class="hover:text-gray-400">CONTACT</li>
             </button>
-
             <hr />
           </Nuxt-link>
 
@@ -42,7 +40,6 @@
             <button @click="removeAction">
               <li class="hover:text-gray-400">PRIVACYPOLICY</li>
             </button>
-
             <hr />
           </Nuxt-link>
         </ul>
@@ -53,12 +50,32 @@
 
 
 <script>
+import {
+  // disableBodyScroll,
+  // enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from 'body-scroll-lock'
+
 export default {
+  props:{
+    flag:Boolean,
+  },
   data() {
     return {
-      show: false,
+      show:false,
     };
   },
+  methods:{
+     removeAction() {
+      this.$emit('remove-event', this.show)
+
+      const burger = document.getElementById('burger')
+      burger.classList.remove('close')
+
+      const html = document.querySelector('html')
+      clearAllBodyScrollLocks(html)
+    },
+  }
 }
 </script>
 

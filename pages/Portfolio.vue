@@ -14,7 +14,7 @@
                <br>
                <h1 class="text-lg font-bold">IdeaList</h1>
                <hr>
-               <p class="break-all">開発環境:Vue.js3/Vite/TailWindCSS/Vscode</p>
+               <p class="break-all">開発環境:Vue.js3/Vite/Node.js/TailWindCSS/Vscode</p>
                     <p class="break-all mt-2">何かアイデアを出す時に<br>メモ帳とToDoリストを行ったり来たりするのが面倒だったので、合体したアプリを作成しました。<br><br>※現状ローカルストレージ版だけですが、
                     <br>DBを使用したログイン版も作成予定です<br><br></p>
            </div>
