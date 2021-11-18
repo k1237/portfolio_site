@@ -8,10 +8,7 @@
 </template>
 
 <script>
-
-export default {
-
-}
+export default {}
 </script>
 
 <style>
@@ -19,10 +16,14 @@ export default {
   width: 80%;
 }
 
+.height1200 {
+  height: 1200px;
+}
+
 /*各ページ1200pxで固定
 ※字が多くなる場合はautoでもいいかも*/
 .height_fixed {
-  height:1200px;
+  height: auto;
 }
 
 /* .contents{
@@ -66,6 +67,9 @@ export default {
 
 /*レスポンシブ*/
 @media screen and (max-width: 640px) {
+  .height1200 {
+    height: auto;
+  }
   .height_fixed {
     height: auto;
   }

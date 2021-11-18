@@ -11,7 +11,7 @@
         </a>
       </div>
 
-      <div class="w-9/12 sm:w-6/12 mx-auto mt-8 ">
+      <div class="w-9/12 sm:w-6/12 mx-auto mt-8 pb-16">
        <h1 class="text-lg font-bold">技術ブログ</h1>
         <hr />
         <p class="break-all">

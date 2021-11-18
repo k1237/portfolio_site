@@ -4,7 +4,7 @@
        <h1 data-aos="fade-right" class="text-4xl text-center stroke">PORTFOLIO</h1>
         
        <div data-aos="fade-right" 
-            class="sm:flex sm:justfy-evenly wrapper mx-auto mt-24 ">
+            class="sm:flex sm:justfy-evenly wrapper mx-auto mt-24 pb-16">
            <div class="sm:mr-2 sm:w-2/6 "> 
                <a href="https://k1237.github.io/IdeaList/">
                    <img src="~@/assets/img/idea.png" alt="">
