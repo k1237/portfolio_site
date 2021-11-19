@@ -11,9 +11,6 @@
       data-aos="fade-right"
       class="w-9/12 mx-auto mt-12"
       name="contact"
-      method="POST"
-      action="/submit"
-      data-netlify="true"
     >
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
@@ -106,6 +103,7 @@
 
       <div class="items-center mx-auto w-9/12 text-center">
         <button
+          v-if="show"
           class="
             shadow
             bg-gray-400
@@ -130,6 +128,11 @@
 
 <script>
 export default {
+   data(){
+     return{
+       show:false,
+     }
+   },
 
 }
 </script>
