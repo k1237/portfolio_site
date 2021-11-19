@@ -1,34 +1,23 @@
 <template>
-  <div class="bg-black 
-              height_fixed 
-              pt-24 
-              font-mate 
-              text-white 
-              pb-16">
-    
-    
-    <h1 data-aos="fade-right" 
-        class="text-4xl text-center stroke">CONTACT</h1>
-    
-    <p data-aos="fade-right" 
-       class="text-center mt-4">※送信機能は現在制作中です<br>
-       ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください</p>
-       
-    <form  data-aos="fade-right" 
-           class="w-9/12 mx-auto mt-12">
+  <div class="bg-black height_fixed pt-24 font-mate text-white pb-16">
+    <h1 data-aos="fade-right" class="text-4xl text-center stroke">CONTACT</h1>
 
-      <div class="flex flex-wrap  mb-6">
+    <p data-aos="fade-right" class="text-center mt-4">
+      ※送信機能は現在制作中です<br />
+      ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください
+    </p>
+
+    <form
+      data-aos="fade-right"
+      class="w-9/12 mx-auto mt-12"
+      name="contact"
+      method="POST"
+      netlify
+    >
+      <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
-            class="
-            stroke
-              block
-              uppercase
-              tracking-wide
-              text-xs
-              font-bold
-              mb-2
-            "
+            class="stroke block uppercase tracking-wide text-xs font-bold mb-2"
             for="grid-password"
           >
             NAME
@@ -46,8 +35,9 @@
               px-4
               mb-3
               leading-tight
-            "  
+            "
             type="text"
+            name="name"
           />
           <p class="text-red-600 text-xs italic">※必須</p>
         </div>
@@ -56,14 +46,7 @@
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
-            class="
-              block
-              uppercase
-              tracking-wide
-              text-xs
-              font-bold
-              mb-2
-            "
+            class="block uppercase tracking-wide text-xs font-bold mb-2"
             for="grid-password"
           >
             E-mail
@@ -83,30 +66,22 @@
               leading-tight
             "
             type="email"
+            name="email"
           />
-          <p class="text-red-600 text-xs italic">
-            ※必須
-          </p>
+          <p class="text-red-600 text-xs italic">※必須</p>
         </div>
       </div>
 
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
-            class="
-              block
-              uppercase
-              tracking-wide
-              text-xs
-              font-bold
-              mb-2
-            "
+            class="block uppercase tracking-wide text-xs font-bold mb-2"
             for="grid-password"
           >
             Message
           </label>
           <textarea
-           id="message"
+            id="message"
             class="
               text-black
               no-resize
@@ -122,32 +97,30 @@
               h-48
               resize-none
             "
+            name="message"
           ></textarea>
-          <p class="text-red-600 text-xs italic">
-          ※必須
-          </p>
+          <p class="text-red-600 text-xs italic">※必須</p>
         </div>
       </div>
-      
-      <div class="items-center mx-auto w-9/12 text-center">
-          <button
-            class="
-              shadow
-              bg-gray-400
-              hover:bg-teal-400
-              focus:shadow-outline focus:outline-none
-              text-white
-              font-bold
-              py-2
-              px-4
-              rounded
-            "
-            type="button"
-          >
-            SEND
-          </button>
-      </div>
 
+      <div class="items-center mx-auto w-9/12 text-center">
+        <button
+          class="
+            shadow
+            bg-gray-400
+            hover:bg-teal-400
+            focus:shadow-outline focus:outline-none
+            text-white
+            font-bold
+            py-2
+            px-4
+            rounded
+          "
+          type="submit"
+        >
+          SEND
+        </button>
+      </div>
     </form>
   </div>
 </template>

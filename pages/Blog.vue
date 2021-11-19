@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-600 height_fixed pt-24 font-mate text-white">
+  <div class="bg-gray-600 height1200 pt-24 font-mate text-white">
     
     <transition appear>
     <h1 class="text-4xl text-center stroke">BLOG</h1>

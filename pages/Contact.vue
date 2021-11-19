@@ -1,17 +1,19 @@
 <template>
   <div class="bg-black height_fixed pt-24 font-mate text-white pb-16">
-    <transition appear>
-      <h1 class="text-4xl text-center stroke">CONTACT</h1>
-    </transition>
-    <transition appear>
-      <p class="text-center mt-4">
-        ※送信機能は現在制作中です<br />
-        ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください
-      </p>
-    </transition>
+    <h1 data-aos="fade-right" class="text-4xl text-center stroke">CONTACT</h1>
 
-    <transition appear>
-    <form class="w-9/12 mx-auto mt-12">
+    <p data-aos="fade-right" class="text-center mt-4">
+      ※送信機能は現在制作中です<br />
+      ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください
+    </p>
+
+    <form
+      data-aos="fade-right"
+      class="w-9/12 mx-auto mt-12"
+      name="contact"
+      method="POST"
+      netlify
+    >
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
@@ -35,6 +37,7 @@
               leading-tight
             "
             type="text"
+            name="name"
           />
           <p class="text-red-600 text-xs italic">※必須</p>
         </div>
@@ -63,6 +66,7 @@
               leading-tight
             "
             type="email"
+            name="email"
           />
           <p class="text-red-600 text-xs italic">※必須</p>
         </div>
@@ -93,6 +97,7 @@
               h-48
               resize-none
             "
+            name="message"
           ></textarea>
           <p class="text-red-600 text-xs italic">※必須</p>
         </div>
@@ -111,13 +116,12 @@
             px-4
             rounded
           "
-          type="button"
+          type="submit"
         >
           SEND
         </button>
       </div>
     </form>
-    </transition>
   </div>
 </template>
 
