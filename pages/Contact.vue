@@ -122,7 +122,6 @@
             hover:bg-gray-700
           "
           type="submit"
-          :disabled="!canSubmit"
         >
           SEND
         </button>
