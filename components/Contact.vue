@@ -24,6 +24,7 @@
           </label>
           <input
             id="nick"
+            v-model="name"
             class="
               text-black
               appearance-none
@@ -39,7 +40,7 @@
             type="text"
             name="name"
           />
-          <p class="text-red-600 text-xs italic">※必須</p>
+          <p class="text-red-300 text-xs italic">※必須</p>
         </div>
       </div>
 
@@ -53,6 +54,7 @@
           </label>
           <input
             id="email"
+            v-model="email"
             class="
               text-black
               appearance-none
@@ -68,7 +70,7 @@
             type="email"
             name="email"
           />
-          <p class="text-red-600 text-xs italic">※必須</p>
+          <p class="text-red-300 text-xs italic">※必須</p>
         </div>
       </div>
 
@@ -82,6 +84,7 @@
           </label>
           <textarea
             id="message"
+            v-model="message"
             class="
               text-black
               no-resize
@@ -99,7 +102,7 @@
             "
             name="message"
           ></textarea>
-          <p class="text-red-600 text-xs italic">※必須</p>
+          <p class="text-red-300 text-xs italic">※必須</p>
         </div>
       </div>
 
@@ -118,6 +121,7 @@
             hover:bg-gray-700
           "
           type="submit"
+          :disabled="!canSubmit"
         >
           SEND
         </button>
@@ -128,5 +132,19 @@
 
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+        name:"",
+        email:"",
+        message:"",
+    }
+  },
+
+  computed:{
+     canSubmit(){
+      return this.name!=="" && this.email!=="" && this.message !=="";
+     },
+  },
+}
 </script>
