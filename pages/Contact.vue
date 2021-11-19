@@ -25,7 +25,6 @@
           </label>
           <input
             id="nick"
-            v-model="name"
             class="
               text-black
               appearance-none
@@ -55,7 +54,6 @@
           </label>
           <input
             id="email"
-            v-model="email"
             class="
               text-black
               appearance-none
@@ -85,7 +83,6 @@
           </label>
           <textarea
             id="message"
-            v-model="message"
             class="
               text-black
               no-resize
@@ -133,13 +130,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-        name:"",
-        email:"",
-        message:"",
-    }
-  },
 
 }
 </script>
