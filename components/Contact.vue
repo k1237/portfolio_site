@@ -141,10 +141,5 @@ export default {
     }
   },
 
-  computed:{
-     canSubmit(){
-      return this.name!=="" && this.email!=="" && this.message !=="";
-     },
-  },
 }
 </script>
