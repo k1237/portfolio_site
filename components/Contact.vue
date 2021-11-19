@@ -10,7 +10,12 @@
     <form
       data-aos="fade-right"
       class="w-9/12 mx-auto mt-12"
+      name="contact"
+      method="POST"
+      action="/submit"
+      data-netlify="true"
     >
+    <input type="hidden" name="form-name" value="contact" />
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
