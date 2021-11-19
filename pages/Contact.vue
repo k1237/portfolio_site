@@ -10,7 +10,7 @@
     <form
       data-aos="fade-right"
       class="w-9/12 mx-auto mt-12"
-      name="contact"
+      name="contactpages"
       method="POST"
       netlify
     >

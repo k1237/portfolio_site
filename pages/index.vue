@@ -35,6 +35,7 @@ export default {}
   font-family: 'Acme', sans-serif;
   font-family: 'Bree Serif', serif;
   font-family: 'Mate SC', serif;
+  font-family: 'Merriweather', serif;
 }
 
 /*文字外枠*/

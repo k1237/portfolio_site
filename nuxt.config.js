@@ -21,7 +21,7 @@ export default {
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'},
       { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
       { rel: 'preconnect', href: 'https://fonts.gstatic.com" crossorigin'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Mate+SC&display=swap'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Mate+SC&family=Merriweather&display=swap" rel="stylesheet'},
     ],
     
   },
