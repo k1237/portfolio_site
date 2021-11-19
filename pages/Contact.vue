@@ -13,6 +13,7 @@
       name="contact"
       method="POST"
       netlify
+      action="/submit"
     >
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
