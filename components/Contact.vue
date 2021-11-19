@@ -12,6 +12,7 @@
       class="w-9/12 mx-auto mt-12"
       name="contact"
       method="POST"
+      action="/submit"
       netlify
     >
       <div class="flex flex-wrap mb-6">
