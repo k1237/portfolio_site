@@ -115,6 +115,7 @@
             py-2
             px-4
             rounded
+            hover:bg-gray-700
           "
           type="submit"
         >
