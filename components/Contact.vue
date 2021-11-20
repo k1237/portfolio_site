@@ -3,8 +3,7 @@
     <h1 data-aos="fade-right" class="text-4xl text-center stroke">CONTACT</h1>
 
     <p data-aos="fade-right" class="text-center mt-4">
-      ※送信機能は現在制作中です<br />
-      ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください
+      ご用件の方はtwitterDMか下記フォームよりご連絡ください
     </p>
 
     <form

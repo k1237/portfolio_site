@@ -6,7 +6,6 @@
     
     <transition appear>
     <p class="text-center mt-4">
-      ※送信機能は現在制作中です<br />
       ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください
     </p>
     </transition>
