@@ -1,16 +1,27 @@
 <template>
   <div class="bg-black height_fixed pt-24 font-mate text-white pb-16">
-    <h1 data-aos="fade-right" class="text-4xl text-center stroke">CONTACT</h1>
-
-    <p data-aos="fade-right" class="text-center mt-4">
+    <transition appear>
+    <h1 class="text-4xl text-center stroke">CONTACT</h1>
+    </transition>
+    
+    <transition appear>
+    <p class="text-center mt-4">
       ※送信機能は現在制作中です<br />
       ご用件の方はtwitterDMかBLOG⇨CONTACTよりご連絡ください
     </p>
-
+    </transition>
+    
+    <transition appear>
     <form
-      data-aos="fade-right"
       class="w-9/12 mx-auto mt-12"
+      name="contact"
+      method="POST"
+      action="/submit"
+      netlify-honeypot="honeypot"
+      data-netlify="true"
     > 
+      <input type="hidden" name="honeypot" />
+      <input type="hidden" name="form-name" value="contact" />
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
@@ -20,7 +31,8 @@
             NAME
           </label>
           <input
-            id="nick"
+            id="name"
+            v-model="name"
             class="
               text-black
               appearance-none
@@ -50,6 +62,7 @@
           </label>
           <input
             id="email"
+            v-model="email"
             class="
               text-black
               appearance-none
@@ -79,6 +92,7 @@
           </label>
           <textarea
             id="message"
+            v-model="message"
             class="
               text-black
               no-resize
@@ -105,15 +119,14 @@
           v-if="show"
           class="
             shadow
-            bg-gray-400
-            hover:bg-teal-400
+            bg-gray-700
+            hover:bg-gray-500
             focus:shadow-outline focus:outline-none
             text-white
             font-bold
             py-2
             px-4
             rounded
-            hover:bg-gray-700
           "
           type="submit"
         >
@@ -121,16 +134,32 @@
         </button>
       </div>
     </form>
+    </transition>
   </div>
 </template>
 
 
 <script>
 export default {
-  data(){
-    return{
-      show:false,
+  data() {
+    return {
+      show: false,
+      name: '',
+      email: '',
+      message: '',
     }
-  }
+  },
+
+  computed: {
+    canSubmit() {
+      return this.name !== '' && this.email !== '' && this.message !== ''
+    },
+  },
+
+  watch: {
+    canSubmit() {
+      this.show = !this.show
+    },
+  },
 }
 </script>

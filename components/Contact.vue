@@ -13,9 +13,11 @@
       name="contact"
       method="POST"
       action="/submit"
+      netlify-honeypot="honeypot"
       data-netlify="true"
     >
-    <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="honeypot" />
+      <input type="hidden" name="form-name" value="contact" />
       <div class="flex flex-wrap mb-6">
         <div class="w-full sm:w-8/12 px-3 mx-auto">
           <label
@@ -25,7 +27,8 @@
             NAME
           </label>
           <input
-            id="nick"
+            id="name"
+            v-model="name"
             class="
               text-black
               appearance-none
@@ -55,6 +58,7 @@
           </label>
           <input
             id="email"
+            v-model="email"
             class="
               text-black
               appearance-none
@@ -84,6 +88,7 @@
           </label>
           <textarea
             id="message"
+            v-model="message"
             class="
               text-black
               no-resize
@@ -110,15 +115,14 @@
           v-if="show"
           class="
             shadow
-            bg-gray-400
-            hover:bg-teal-400
+            bg-gray-700
+            hover:bg-gray-500
             focus:shadow-outline focus:outline-none
             text-white
             font-bold
             py-2
             px-4
             rounded
-            hover:bg-gray-700
           "
           type="submit"
         >
@@ -132,11 +136,25 @@
 
 <script>
 export default {
-   data(){
-     return{
-       show:true,
-     }
-   },
+  data() {
+    return {
+      show: false,
+      name: '',
+      email: '',
+      message: '',
+    }
+  },
 
+  computed: {
+    canSubmit() {
+      return this.name !== '' && this.email !== '' && this.message !== ''
+    },
+  },
+
+  watch: {
+    canSubmit() {
+      this.show = !this.show
+    },
+  },
 }
 </script>
