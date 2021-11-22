@@ -87,43 +87,22 @@ import {
 } from 'body-scroll-lock'
 
 export default {
-
-  props:{
-    flag:Boolean,
-  },
-
-  data() {
-    return {
-      show:false,
-    }
-  },
-
-  watch: {
-    flag(newValue) {
-      this.show = newValue;
-    }
-  },
-
   methods: {
     toggleAction() {
-      this.show = !this.show;
-      this.$emit('toggle-event', this.show);
+      this.$store.commit('switch')
 
       const burger = document.getElementById('burger');
+      const html = document.querySelector('html');
+      
       if(burger.classList.contains('close')===false){
          burger.classList.add('close');
+         disableBodyScroll(html);
       }else if(burger.classList.contains('close')===true){
          burger.classList.remove('close');
+         clearAllBodyScrollLocks(html);
       }
 
-
-      const html = document.querySelector('html');
-      if (this.show === true) {
-        disableBodyScroll(html);
-      } else if (this.show === false) {
-        clearAllBodyScrollLocks(html);
-      }
-    },
+     },
   },
 }
 </script>

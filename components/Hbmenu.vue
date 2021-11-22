@@ -1,51 +1,50 @@
 <template>
-<!--ハンバーガーメニュー-->
-    <transition name="slide-fade">
-      <div 
-        v-if="flag"
-        id="burger-menu"
-        class="bg-black w-6/12 sm:hidden fixed h-full z-10 mt-14"
-      >
-        <ul class="text-white text-left text-2xl">
-          <Nuxt-link to="/Profile">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">PROFILE</li>
-            </button>
+  <!--ハンバーガーメニュー-->
+  <transition name="slide-fade">
+    <div
+      v-if="$store.state.flag"
+      id="burger-menu"
+      class="bg-black w-6/12 sm:hidden fixed h-full z-10 mt-14"
+    >
+      <ul class="text-white text-left text-2xl">
+        <Nuxt-link to="/Profile">
+          <button @click="removeAction">
+            <li class="hover:text-gray-400">PROFILE</li>
+          </button>
 
-            <hr />
-          </Nuxt-link>
+          <hr />
+        </Nuxt-link>
 
-          <Nuxt-link to="/Portfolio">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">PORTFOLIO</li>
-            </button>
-            <hr />
-          </Nuxt-link>
+        <Nuxt-link to="/Portfolio">
+          <button @click="removeAction">
+            <li class="hover:text-gray-400">PORTFOLIO</li>
+          </button>
+          <hr />
+        </Nuxt-link>
 
-          <Nuxt-link to="/Blog">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">BLOG</li>
-            </button>
-            <hr />
-          </Nuxt-link>
+        <Nuxt-link to="/Blog">
+          <button @click="removeAction">
+            <li class="hover:text-gray-400">BLOG</li>
+          </button>
+          <hr />
+        </Nuxt-link>
 
-          <Nuxt-link to="/Contact">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">CONTACT</li>
-            </button>
-            <hr />
-          </Nuxt-link>
+        <Nuxt-link to="/Contact">
+          <button @click="removeAction">
+            <li class="hover:text-gray-400">CONTACT</li>
+          </button>
+          <hr />
+        </Nuxt-link>
 
-          <Nuxt-link to="/Privacy">
-            <button @click="removeAction">
-              <li class="hover:text-gray-400">PRIVACYPOLICY</li>
-            </button>
-            <hr />
-          </Nuxt-link>
-        </ul>
-      </div>
-    </transition>
-
+        <Nuxt-link to="/Privacy">
+          <button @click="removeAction">
+            <li class="hover:text-gray-400">PRIVACYPOLICY</li>
+          </button>
+          <hr />
+        </Nuxt-link>
+      </ul>
+    </div>
+  </transition>
 </template>
 
 
@@ -57,25 +56,16 @@ import {
 } from 'body-scroll-lock'
 
 export default {
-  props:{
-    flag:Boolean,
-  },
-  data() {
-    return {
-      show:false,
-    };
-  },
-  methods:{
-     removeAction() {
-      this.$emit('remove-event', this.show)
+  methods: {
+    removeAction() {
+      this.$store.commit('init')
 
       const burger = document.getElementById('burger')
-      burger.classList.remove('close')
-
       const html = document.querySelector('html')
+      burger.classList.remove('close')
       clearAllBodyScrollLocks(html)
     },
-  }
+  },
 }
 </script>
 
@@ -83,8 +73,8 @@ export default {
 /*ハンバーガーメニュー*/
 
 #burger-menu {
-   margin-left: 50%;
-  height:100;
+  margin-left: 50%;
+  height: 100;
   /* margin-top:-10%; */
 }
 

@@ -1,10 +1,7 @@
 <template>
   <div>
-    <Header :flag="flag"
-            @toggle-event="toggleAction"/>
-    <Hbmenu :flag="flag"
-            @remove-event="removeAction"
-            />
+    <Header/>
+    <Hbmenu/>
     <Nuxt />
     <Footer />
   </div>
@@ -13,18 +10,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      flag:false,
-    }
-  },
-  methods: {
-    toggleAction(show) {
-      this.flag = show;
-    },
-    removeAction(show){
-      this.flag = show;
-    }
-  },
+
 }
 </script>
