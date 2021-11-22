@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black height_fixed pt-24 font-mate text-white pb-16">
     <transition appear>
-      <h1 class="text-4xl text-center stroke">CONTACT</h1>
+      <h1 class="text-4xl text-center stroke pt-10">CONTACT</h1>
     </transition>
 
     <transition appear>

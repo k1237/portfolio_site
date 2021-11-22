@@ -1,10 +1,10 @@
 <template>
   <div class="bg-black height_fixed pt-24 font-mate text-white">
-    <transition appear>
-      <h1 class="text-4xl text-center stroke">PORTFOLIO</h1>
-    </transition>
+      <transition appear>
+      <h1 class="text-4xl text-center stroke pt-10">PORTFOLIO</h1>
+      </transition>
 
-    <transition appear>
+      <transition appear>
       <div class="sm:flex sm:justfy-evenly wrapper mx-auto mt-24">
         <div class="sm:mr-2 sm:w-2/6">
           <a href="https://k1237.github.io/IdeaList/">
@@ -38,6 +38,6 @@
           <p class="break-all">現在制作中...</p>
         </div>
       </div>
-    </transition>
+       </transition>
   </div>
 </template>

@@ -1,11 +1,9 @@
 <template>
   <div class="bg-gray-600 height_fixed pt-4 sm:pt-24 font-mate">
-    <transition appear>
-      <h1 class="pt-16 text-4xl text-center stroke text-white">PROFILE</h1>
-    </transition>
 
-    <transition appear>
-      <div class="wrapper m-auto h-5/6 sm:flex justfy-evenly">
+      <h1 data-aos="fade-right" class="pt-16 text-4xl text-center stroke text-white">PROFILE</h1>
+
+      <div data-aos="fade-right" class="wrapper m-auto h-5/6 sm:flex justfy-evenly">
         <div class="text-white sm:flex-1 text-center sm:w-6/12 mb-16">
           <!--img-->
           <img
@@ -57,7 +55,6 @@
           </div>
         </div>
       </div>
-    </transition>
   </div>
 </template>
 

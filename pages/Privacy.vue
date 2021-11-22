@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-600 height1200 pt-24 font-mate text-white">
     <transition appear>
-      <h1 class="text-4xl text-center stroke">PRIVACYPOLICY</h1>
+      <h1 class="text-4xl text-center stroke pt-10">PRIVACYPOLICY</h1>
     </transition>
 
     <transition appear>
