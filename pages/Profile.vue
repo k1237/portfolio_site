@@ -36,7 +36,7 @@
         <div class="text-white sm:flex-1 mt-20 stroke sm:w-6/12">
           <div class="text-xl sm:text-2xl mt-8 ml-8">
             <p>Name:K</p>
-            <p>Age:29(1991/12/03)</p>
+            <p>Age:30(1991/12/03)</p>
             <br />
             <p class="text-base sm:text-xl sm:ml-4">
               事務の仕事をしている時に、<br />
