@@ -30,7 +30,7 @@
         <h1 class="text-lg font-bold">オートチャット</h1>
         <hr />
         <p class="break-all">
-          開発環境:Nuxt.js/firebase/Node.js/TailWindCSS/Netlify
+          開発環境:Nuxt.js/firebase/Node.js/TailWindCSS/Netlify/Jest/CircleCI
         </p>
         <p class="break-all mt-2">
           LIVE配信をしてもなかなかコメントが来ないという方向けに、ランダムで質問などをコメント風に表示してくれるサイトを作成しました。
